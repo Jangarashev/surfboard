@@ -70,7 +70,7 @@ a {
 }
 
 .hero {
-  background: url(/surfboard1/img/welcome-page.jfif) center bottom no-repeat;
+  background: url(./img/welcome-page.jfif) center bottom no-repeat;
   background-color: #292929;
   height: 100vh;
   min-height: 650px;
@@ -235,7 +235,7 @@ a {
 }
 
 .order-section {
-  background: url(/surfboard1/img/form-background.jfif) center bottom no-repeat;
+  background: url(./img/form-background.jfif) center bottom no-repeat;
 }
 
 .headline {
@@ -265,7 +265,7 @@ a {
   position: relative;
 }
 .benefits__item::before {
-  content: url(/surfboard1/img/Combined-shape.png);
+  content: url(./img/Combined-shape.png);
   position: absolute;
   top: 30px;
   right: 0;

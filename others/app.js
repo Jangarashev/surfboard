@@ -1,2 +1,0 @@
-const variable = 2;
-

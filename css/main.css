@@ -197,9 +197,17 @@ a {
   background: #FEDB3F;
   color: #000000;
   text-decoration: none;
+  border: none;
 }
 .button:hover {
   background: #FFD517;
+}
+.button--color--grey {
+  background: transparent;
+  color: #fff;
+}
+.button--color--grey:hover {
+  color: #FEDB3F;
 }
 
 .section {
@@ -436,4 +444,57 @@ a {
 .form__input:focus {
   border-color: #FEDB3F;
   outline: none;
+}
+
+.form__controls {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.radio {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  cursor: pointer;
+}
+.radio--checkbox .radio__visible {
+  border-radius: 0;
+}
+.radio--checkbox:before {
+  background: url(../../img/tick.png) center center no-repeat;
+}
+
+.radio__elem {
+  display: none;
+}
+.radio__elem:checked ~ .radio__visible:before {
+  display: block;
+}
+
+.radio__visible {
+  width: 24px;
+  height: 24px;
+  position: relative;
+  border-radius: 50%;
+  background: #fff;
+}
+.radio__visible:before {
+  content: "";
+  width: 14px;
+  height: 14px;
+  border-radius: 50%;
+  background: #FEDB3F;
+  position: absolute;
+  display: none;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
 }

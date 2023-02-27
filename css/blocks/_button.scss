@@ -8,8 +8,19 @@
     background: $yellow;
     color: #000000;
     text-decoration: none;
+    border: none;
 
     &:hover {
         background: #FFD517;
     }
+
+    &--color--grey {
+        background: transparent;
+        color: #fff;
+    
+        &:hover {
+            color: $yellow;
+        }
+    }
 }
+

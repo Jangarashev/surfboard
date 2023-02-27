@@ -1,0 +1,18 @@
+.reviews__text {
+    font-size: 72px;
+    font-weight: 800;
+    line-height: 1.1;
+    text-transform: uppercase;
+    margin-bottom: 15px;
+}
+
+.reviews {
+    background: #fff;
+    column-count: 2;
+    column-gap: 26px;
+    margin-bottom: 50px;
+}
+
+.reviews__item {
+    margin-bottom: 15px;
+}

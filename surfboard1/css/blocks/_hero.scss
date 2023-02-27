@@ -1,0 +1,33 @@
+.hero {
+    background: url(/surfboard1/img/welcome-page.jfif) center bottom no-repeat;
+    background-color: $black;
+    height: 100vh;
+    min-height: 650px;
+    color: #fff;
+}
+
+.hero__container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+    padding: 25px 0 60px;
+}
+
+.hero__title-section {
+    width: 25%;
+}
+
+.hero__main-title {
+    font-size: 48px;
+    font-weight: 700;
+    line-height: 1.1;
+    margin-bottom: 15px;
+    text-transform: uppercase;
+}
+
+.hero__title-desc {
+    font-size: 21px;
+    font-weight: 400;
+    margin-bottom: 30px;
+}

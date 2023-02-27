@@ -1,0 +1,12 @@
+.contacts {
+    font-style: normal;
+    text-align: right;
+    padding-top: 16px;
+}
+
+.contacts__tel {
+    text-decoration: none;
+    font-size: 26px;
+    display: block;
+    line-height: 1.4;
+}

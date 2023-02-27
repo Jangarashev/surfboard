@@ -1,0 +1,82 @@
+.socials__list {
+    display: flex;
+    align-items: center;
+    margin-right: 60px;
+}
+
+.socials__item {
+    margin-right: 10px;
+}
+
+.socials__item:last-child {
+    margin-right: 0;
+}
+
+.socials__link {
+    position: relative;
+    display: block;
+    text-decoration: none;
+    width: 36px;
+    height: 36px;
+    background: center center no-repeat; 
+}
+
+.socials__link::before, .socials__link::after {
+    content: "";
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    transition: opacity .3s;
+    background: url(../img/css_sprites.png) center no-repeat;
+}
+
+.socials__link::before {
+    opacity: 1;
+}
+
+.socials__link::after {
+    opacity: 0;
+}
+
+.socials__link:hover::before {
+    opacity: 0;
+}
+
+.socials__link:hover::after {
+    opacity: 1;
+}
+
+.socials__item--icon--tg .socials__link::before {
+    background-position: -66px -122px;
+}
+
+.socials__item--icon--tg .socials__link::after {
+    background-position: -66px -66px;
+}
+
+.socials__item--icon--vk .socials__link::before {
+    background-position: -10px -122px;
+}
+
+.socials__item--icon--vk .socials__link::after {
+    background-position: -10px -66px;
+}
+
+.socials__item--icon--fb .socials__link::before {
+    background-position: -122px -66px;
+}
+
+.socials__item--icon--fb .socials__link::after {
+    background-position: -66px -10px;
+}
+
+.socials__item--icon--in .socials__link::before {
+    background-position: -122px -10px;
+}
+
+.socials__item--icon--in .socials__link::after {
+    background-position: -10px -10px;
+}

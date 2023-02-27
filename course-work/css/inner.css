@@ -1,0 +1,23 @@
+.inner-section {
+    background: #F4F5F5;
+    color: #1A1B1E;
+    padding: 85px 0 70px 0;
+}
+
+.inner-section__title {
+    font-size: 48px;
+    font-weight: 700;
+    margin-bottom: 60px;
+}
+
+.inner-section--review__title {
+    font-size: 36px;
+    font-weight: 800;
+    line-height: 49.03px;
+    margin-bottom: 57px;
+    text-transform: uppercase;
+}
+
+.inner-section--review {
+    padding: 85px 0 95px 0;
+}

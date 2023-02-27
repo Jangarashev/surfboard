@@ -22,6 +22,7 @@
             display: block;
         }
     }
+    
 }
 
 .radio__visible {
@@ -35,6 +36,7 @@
         content: "";
         width: 14px;
         height: 14px;
+        border-radius: 50%;
         background: $yellow;
         position: absolute;
         display: none;

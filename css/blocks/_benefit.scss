@@ -25,9 +25,13 @@
     font-size: 27px;
     font-weight: 700;
     padding-top: 10px;
-    margin-bottom: 10px;
+    color: $black;
+}
+
+.headline__subtitle {
+    padding: 0 30%;
 }
 
 .benefit__desc {
-    padding: 0 16%;
+    padding: 0 5%;
 }

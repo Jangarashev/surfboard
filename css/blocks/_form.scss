@@ -1,5 +1,6 @@
 .form {
     display: flex;
+    color: #fff;
 }
 
 .form__col {
@@ -14,6 +15,10 @@
 .form__row {
     display: flex;
     margin-bottom: 30px;
+
+    &:last-child {
+        margin-bottom: 0;
+    }
 }
 
 .form__block {

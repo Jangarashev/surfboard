@@ -93,7 +93,7 @@ a {
 }
 
 .hero__title-section {
-  width: 25%;
+  width: 45%;
 }
 
 .hero__main-title {
@@ -202,12 +202,13 @@ a {
 .button:hover {
   background: #FFD517;
 }
-.button--color--grey {
+.button--color--transparent {
   background: transparent;
   color: #fff;
 }
-.button--color--grey:hover {
-  color: #FEDB3F;
+.button--color--transparent:hover {
+  color: #292929;
+  background-color: #FEDB3F;
 }
 
 .section {
@@ -236,6 +237,10 @@ a {
 
 .order-section {
   background: url(../img/form-background.jfif) center bottom no-repeat;
+}
+
+.order__title {
+  color: #fff;
 }
 
 .headline {
@@ -310,16 +315,21 @@ a {
   font-size: 27px;
   font-weight: 700;
   padding-top: 10px;
-  margin-bottom: 10px;
+  color: #292929;
+}
+
+.headline__subtitle {
+  padding: 0 30%;
 }
 
 .benefit__desc {
-  padding: 0 16%;
+  padding: 0 5%;
 }
 
 .reviews__display {
   background: #F8FAF9;
   padding: 45px 45px;
+  margin-bottom: 16px;
 }
 
 .reviews__display-inner {
@@ -403,6 +413,7 @@ a {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  color: #fff;
 }
 
 .form__col {
@@ -420,6 +431,9 @@ a {
   display: -ms-flexbox;
   display: flex;
   margin-bottom: 30px;
+}
+.form__row:last-child {
+  margin-bottom: 0;
 }
 
 .form__block {
@@ -463,6 +477,11 @@ a {
       -ms-user-select: none;
           user-select: none;
   cursor: pointer;
+  padding: 0 15px;
+  margin-bottom: 20px;
+}
+.radio:last-child {
+  margin-bottom: 40px;
 }
 .radio--checkbox .radio__visible {
   border-radius: 0;
@@ -483,6 +502,7 @@ a {
   height: 24px;
   position: relative;
   border-radius: 50%;
+  margin-right: 8px;
   background: #fff;
 }
 .radio__visible:before {

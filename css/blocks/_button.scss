@@ -14,12 +14,13 @@
         background: #FFD517;
     }
 
-    &--color--grey {
+    &--color--transparent {
         background: transparent;
         color: #fff;
     
         &:hover {
-            color: $yellow;
+            color: $black;
+            background-color: $yellow;
         }
     }
 }

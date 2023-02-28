@@ -71,6 +71,7 @@ a {
 
 .hero {
   background: url(../img/welcome-page.jfif) center bottom no-repeat;
+  background-size: cover;
   background-color: #292929;
   height: 100vh;
   min-height: 650px;
@@ -237,6 +238,7 @@ a {
 
 .order-section {
   background: url(../img/form-background.jfif) center bottom no-repeat;
+  background-size: cover;
 }
 
 .order__title {

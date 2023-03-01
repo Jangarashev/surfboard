@@ -7,6 +7,10 @@ $yellow: #FEDB3F;
 $grey: #666;
 $white: #fff;
 
+//z-indexes
+
+$z-fixed-menu:100;
+
 //normalize
 @import "https://necolas.github.io/normalize.css/8.0.1/normalize.css";
 
@@ -29,3 +33,5 @@ $white: #fff;
   @import "blocks/_interactive-avatar";
   @import "blocks/_form";
   @import "blocks/_radio";
+  @import "blocks/fixed-menu";
+

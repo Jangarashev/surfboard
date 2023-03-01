@@ -12,11 +12,13 @@
     &--checkbox {
         .radio__visible {
             border-radius: 0;
+
+            &:before {
+                background: url(../img/tick.png) center center no-repeat;
+            }
         }
 
-        &:before {
-            background: url(../img/tick.png) center center no-repeat;
-        }
+
     }
 }
 

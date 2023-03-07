@@ -1,5 +1,9 @@
 .benefits {
     display: flex;
+
+        @include phones {
+        flex-direction: column;
+    }
 }
 
 .benefits__item  {
@@ -10,7 +14,7 @@
     &::before {
         content: url(../img/Combined-shape.png);
         position: absolute;
-        top: 30px;
+        top: rem(30px);
         right: 0;
         transform: translate(50%);
 
@@ -26,5 +30,13 @@
         &::before {
             display: none;
         }
+
+        @include phones {
+            display: none;
+            
+        }
     }
+
+    
+    
 }

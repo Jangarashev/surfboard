@@ -2,11 +2,11 @@
     display: flex;
     user-select: none;
     cursor: pointer;
-    padding: 0 15px;
-    margin-bottom: 20px;
+    padding: 0 rem(15px);
+    margin-bottom: rem(20px);
 
     &:last-child {
-        margin-bottom: 40px;
+        margin-bottom: rem(40px);
     }
 
     &--checkbox {
@@ -34,17 +34,17 @@
 }
 
 .radio__visible {
-    width: 24px;
-    height: 24px;
+    width: rem(24px);
+    height: rem(24px);
     position: relative;
     border-radius: 50%;
-    margin-right: 8px;
+    margin-right: rem(8px);
     background: #fff;
 
     &:before {
         content: "";
-        width: 14px;
-        height: 14px;
+        width: rem(14px);
+        height: rem(14px);
         border-radius: 50%;
         background: $yellow;
         position: absolute;

@@ -4,8 +4,8 @@
 
 .benefit__image-wrapper {
     display: inline-block;
-    width: 128px;
-    height: 128px;
+    width: rem(128px);
+    height: rem(128px);
     position: relative;
     background: #F2F5F4;
     border-radius: 50%;
@@ -13,8 +13,8 @@
 }
 
 .benefit__icon {
-    width: 68px;
-    height: 68px;
+    width: rem(68px);
+    height: rem(68px);
     position: absolute;
     top: 50%;
     left: 50%;
@@ -22,16 +22,24 @@
 }
 
 .benefit__title {
-    font-size: 27px;
+    font-size: rem(27px);
     font-weight: 700;
-    padding-top: 10px;
+    padding-top: rem(10px);
     color: $black;
 }
 
 .headline__subtitle {
     padding: 0 30%;
+
+    @include tablets {
+        padding: 0 20%;
+    }
 }
 
 .benefit__desc {
     padding: 0 5%;
+
+    @include tablets {
+        padding: 0 0;
+    }
 }

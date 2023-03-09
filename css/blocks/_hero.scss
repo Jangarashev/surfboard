@@ -23,6 +23,8 @@
 
 .hero__title-section {
     width: 45%;
+    margin-left: 5%;
+    line-height: 0.9;
 
     @include tablets {
         width: 100%;
@@ -56,5 +58,6 @@
 .hero__title-desc {
     font-size: rem(21px);
     font-weight: 400;
-    margin-bottom: rem(30px);
+    margin: rem(35px) 0;
+    padding-bottom: rem(15px);
 }

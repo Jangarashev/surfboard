@@ -1,4 +1,7 @@
 .phone-number.header__phone-number {
+    transform: translateX(-18%);
+    margin-bottom: rem(10px);
+
     @include tablets {
         display: none;
     }

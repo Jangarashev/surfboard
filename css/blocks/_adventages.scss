@@ -1,11 +1,3 @@
 .adventages {
     display: flex;
 }
-
-.adventages__item {
-    margin-right: rem(33px);
-
-    &:last-child {
-        margin-right: 0;
-    }
-}

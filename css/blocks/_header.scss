@@ -1,9 +1,22 @@
 .header {
     display: flex;
-    align-items: flex-start;
+    align-items: center;
     justify-content: space-around;
 
     @include tablets {
         justify-content: space-between;
     }
 }
+
+.logo__img {
+    transform: translateX(50%);
+}
+
+
+
+
+
+
+
+
+

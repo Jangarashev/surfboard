@@ -1,5 +1,6 @@
 .adventage {
     display: flex;
+    margin-left: 5%;
 }
 
 .adventage__icon {
@@ -8,6 +9,7 @@
 }
 
 .adventage__text {
+    padding: 0 2%;
     font-size: rem(16px);
     min-width: rem(90px);
 }

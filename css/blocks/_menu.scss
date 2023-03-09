@@ -1,5 +1,5 @@
 .menu {
-    
+    margin-right: 50px;
     @include tablets {
         display: none;
     }
@@ -10,6 +10,7 @@
     flex-wrap: wrap;
     align-items: center;
     justify-content: center;
+    transform: translateX(4%);
 }
 
 .menu__link {
@@ -18,11 +19,10 @@
 }
 
 .menu__item {
-    margin-right: rem(20px);
+    margin-right: rem(25px);
     margin-bottom: rem(10px);
 
     &:last-child {
         margin-right: 0;
-        margin-bottom: 0;
     }
 }

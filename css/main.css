@@ -114,6 +114,8 @@ a {
 
 .hero__title-section {
   width: 45%;
+  margin-left: 5%;
+  line-height: 0.9;
 }
 @media screen and (max-width: 768px) {
   .hero__title-section {
@@ -154,16 +156,17 @@ a {
 .hero__title-desc {
   font-size: 1.1666666667rem;
   font-weight: 400;
-  margin-bottom: 1.6666666667rem;
+  margin: 1.9444444444rem 0;
+  padding-bottom: 0.8333333333rem;
 }
 
 .header {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: start;
-      -ms-flex-align: start;
-          align-items: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   -ms-flex-pack: distribute;
       justify-content: space-around;
 }
@@ -175,6 +178,14 @@ a {
   }
 }
 
+.logo__img {
+  -webkit-transform: translateX(50%);
+          transform: translateX(50%);
+}
+
+.menu {
+  margin-right: 50px;
+}
 @media screen and (max-width: 768px) {
   .menu {
     display: none;
@@ -193,6 +204,8 @@ a {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  -webkit-transform: translateX(4%);
+          transform: translateX(4%);
 }
 
 .menu__link {
@@ -201,14 +214,18 @@ a {
 }
 
 .menu__item {
-  margin-right: 1.1111111111rem;
+  margin-right: 1.3888888889rem;
   margin-bottom: 0.5555555556rem;
 }
 .menu__item:last-child {
   margin-right: 0;
-  margin-bottom: 0;
 }
 
+.phone-number.header__phone-number {
+  -webkit-transform: translateX(-18%);
+          transform: translateX(-18%);
+  margin-bottom: 0.5555555556rem;
+}
 @media screen and (max-width: 768px) {
   .phone-number.header__phone-number {
     display: none;
@@ -275,17 +292,11 @@ a {
   display: flex;
 }
 
-.adventages__item {
-  margin-right: 1.8333333333rem;
-}
-.adventages__item:last-child {
-  margin-right: 0;
-}
-
 .adventage {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  margin-left: 5%;
 }
 
 .adventage__icon {
@@ -294,6 +305,7 @@ a {
 }
 
 .adventage__text {
+  padding: 0 2%;
   font-size: 0.8888888889rem;
   min-width: 5rem;
 }
@@ -309,9 +321,13 @@ a {
   color: #000000;
   text-decoration: none;
   border: none;
+  -webkit-transition: background-color 0.3s, border-color 0.3s, color 0.3s;
+  transition: background-color 0.3s, border-color 0.3s, color 0.3s;
 }
 .button:hover {
   background: #FFD517;
+  -webkit-transition: background-color 0.3s, border-color 0.3s, color 0.3s;
+  transition: background-color 0.3s, border-color 0.3s, color 0.3s;
 }
 .button--color--transparent {
   background: transparent;
@@ -753,7 +769,7 @@ svg {
 .fixed-menu {
   position: fixed;
   top: 25%;
-  right: 3%;
+  right: 4%;
   z-index: 100;
 }
 @media screen and (max-width: 768px) {

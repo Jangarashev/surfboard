@@ -15,19 +15,6 @@
     color: $black;
 }
 
-.order-section {
-    background: url(../img/form-background.jfif) center bottom no-repeat;
-    background-size: cover;
-
-    @include tablets {
-    padding: 20% 0;
-    height: 100%;
-    }
-}
-
-.order__title {
-    color: #fff;
-}
 
 .map-section {
     background: url(../img/map.png) center bottom no-repeat; 

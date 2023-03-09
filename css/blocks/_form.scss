@@ -1,6 +1,8 @@
 .form {
     display: flex;
     color: #fff;
+    padding: 0 5%;
+    transform: translateY(-5%);
 
     @include tablets {
         flex-direction: column;
@@ -23,12 +25,6 @@
 
 .form__row {
     display: flex;
-    margin-bottom: rem(30px);
-
-    &:last-child {
-        margin-bottom: 0;
-    }
-
 }
 
 .form__block {

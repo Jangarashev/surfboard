@@ -362,21 +362,6 @@ a {
   color: #292929;
 }
 
-.order-section {
-  background: url(../img/form-background.jfif) center bottom no-repeat;
-  background-size: cover;
-}
-@media screen and (max-width: 768px) {
-  .order-section {
-    padding: 20% 0;
-    height: 100%;
-  }
-}
-
-.order__title {
-  color: #fff;
-}
-
 .map-section {
   background: url(../img/map.png) center bottom no-repeat;
   background-size: contain;
@@ -583,11 +568,29 @@ a {
      object-fit: cover;
 }
 
+.order-section {
+  background: url(../img/form-background.jfif) center bottom no-repeat;
+  background-size: cover;
+  height: 100%;
+}
+@media screen and (max-width: 768px) {
+  .order-section {
+    padding: 20% 0;
+  }
+}
+
+.order__title {
+  color: #fff;
+}
+
 .form {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   color: #fff;
+  padding: 0 5%;
+  -webkit-transform: translateY(-5%);
+          transform: translateY(-5%);
 }
 @media screen and (max-width: 768px) {
   .form {
@@ -618,10 +621,6 @@ a {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  margin-bottom: 1.6666666667rem;
-}
-.form__row:last-child {
-  margin-bottom: 0;
 }
 
 .form__block {

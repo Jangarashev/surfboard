@@ -391,11 +391,17 @@ a {
 }
 
 .headline__subtitle {
-  padding: 0 35.8%;
   margin-bottom: 2.5rem;
+  padding: 0 25%;
+}
+@media screen and (max-width: 768px) {
+  .headline__subtitle {
+    padding: 0 20%;
+  }
 }
 
 .benefits {
+  margin: 0 5%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -419,7 +425,7 @@ a {
 .benefits__item::before {
   content: url(../img/Combined-shape.png);
   position: absolute;
-  top: 1.6666666667rem;
+  top: 3.3333333333rem;
   right: 0;
   -webkit-transform: translate(50%);
           transform: translate(50%);
@@ -468,24 +474,6 @@ a {
   font-weight: 700;
   padding-top: 0.5555555556rem;
   color: #292929;
-}
-
-.headline__subtitle {
-  padding: 0 30%;
-}
-@media screen and (max-width: 768px) {
-  .headline__subtitle {
-    padding: 0 20%;
-  }
-}
-
-.benefit__desc {
-  padding: 0 5%;
-}
-@media screen and (max-width: 768px) {
-  .benefit__desc {
-    padding: 0 0;
-  }
 }
 
 .reviews__display {

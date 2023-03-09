@@ -28,18 +28,3 @@
     color: $black;
 }
 
-.headline__subtitle {
-    padding: 0 30%;
-
-    @include tablets {
-        padding: 0 20%;
-    }
-}
-
-.benefit__desc {
-    padding: 0 5%;
-
-    @include tablets {
-        padding: 0 0;
-    }
-}

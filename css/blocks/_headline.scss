@@ -7,6 +7,10 @@
 }
 
 .headline__subtitle {
-    padding: 0 35.8%;
     margin-bottom: rem(45px);
+    padding: 0 25%;
+
+    @include tablets {
+        padding: 0 20%;
+    }
 }

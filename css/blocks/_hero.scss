@@ -7,9 +7,15 @@
     color: #fff;
 
     @include tablets {
-        background-position: right 5% bottom;
-        opacity: 80%;
-    
+        background-size: 150% 150%;
+        background-position: top 91px right;
+        background-color: $blue;
+    }
+
+    @include phones {
+        background-size: cover;
+        background-color: $blue;
+        background-position: top 91px center;
     }
 }
 
@@ -19,6 +25,10 @@
     justify-content: space-between;
     height: 100%;
     padding: rem(25px) 0 rem(60px);
+
+    @include tablets {
+        text-align: center;
+    }
 }
 
 .hero__title-section {
@@ -27,18 +37,14 @@
     line-height: 0.9;
 
     @include tablets {
-        width: 100%;
-        flex: 1;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        text-align: center;
+        width: 95%;
+        margin-left: 0;
     }
 
     @include phones {
-        
+        width: 100%;
     }
+
 }
 
 .hero__icons-section {

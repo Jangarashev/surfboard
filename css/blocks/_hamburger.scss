@@ -9,6 +9,10 @@
     @include tablets {
         display: inline-flex;
     }
+
+    @include phones {
+        transform: translateX(40%);
+    }
 }
 
 .hamburger__plank {

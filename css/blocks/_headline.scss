@@ -4,6 +4,10 @@
 
 .headline__title {
     margin-bottom: rem(10px);
+
+    @include phones {
+        margin-bottom: 0;
+    }
 }
 
 .headline__subtitle {
@@ -12,5 +16,9 @@
 
     @include tablets {
         padding: 0 20%;
+    }
+
+    @include phones {
+    padding: 0 8%;
     }
 }

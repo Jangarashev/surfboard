@@ -1,6 +1,8 @@
 .footer {
     position: absolute;
     background: #fff;
+    bottom: (0px);
+    left: rem(0px);
 }
 
 .footer__content {
@@ -8,3 +10,4 @@
     align-items: center;
     justify-content: space-around;
 }
+

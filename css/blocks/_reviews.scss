@@ -34,6 +34,10 @@
 .reviews__content {
     flex: 1;
     margin-left: rem(40px);
+
+    @include phones {
+        margin-left: 0;
+    }
 }
 
 .reviews__title {

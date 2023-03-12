@@ -7,8 +7,7 @@
     color: #fff;
 
     @include tablets {
-        background-size: 150% 150%;
-        background-position: top 91px right;
+        background: url(../img/welcome-768.png) center center no-repeat;
         background-color: $blue;
     }
 
@@ -41,8 +40,13 @@
         margin-left: 0;
     }
 
+    @include tablets {
+        padding-bottom: 20%;
+    }
+
     @include phones {
         width: 100%;
+        padding-bottom: 30%;
     }
 
 }

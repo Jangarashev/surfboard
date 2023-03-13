@@ -7,7 +7,7 @@
     color: #fff;
 
     @include tablets {
-        background: url(../img/welcome-768.png) center center no-repeat;
+        background: url(../img/welcome-768.png) center top rem(91px) no-repeat;
         background-color: $blue;
     }
 
@@ -46,7 +46,7 @@
 
     @include phones {
         width: 100%;
-        padding-bottom: 30%;
+        padding-bottom: 25%;
     }
 
 }
@@ -63,6 +63,11 @@
     line-height: 1.1;
     margin-bottom: rem(15px);
     text-transform: uppercase;
+
+    @include phones {
+        font-size: rem(32px);
+        line-height: 1;
+    }
 }
 
 .hero__title-desc {

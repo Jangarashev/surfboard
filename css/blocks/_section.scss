@@ -20,12 +20,13 @@
 
     @include phones {
         font-size: rem(40px);
+        padding-top: 10%;
     }
 }
 
 
 .map-section {
     background: url(../img/map.png) center top no-repeat; 
-    background-size: contain;
+    background-size: cover;
     position: relative;
 }

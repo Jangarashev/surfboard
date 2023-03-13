@@ -96,7 +96,7 @@ a {
 }
 @media screen and (max-width: 768px) {
   .hero {
-    background: url(../img/welcome-768.png) center center no-repeat;
+    background: url(../img/welcome-768.png) center top 5.0555555556rem no-repeat;
     background-color: #1968B1;
   }
 }
@@ -147,7 +147,7 @@ a {
 @media screen and (max-width: 480px) {
   .hero__title-section {
     width: 100%;
-    padding-bottom: 30%;
+    padding-bottom: 25%;
   }
 }
 
@@ -163,6 +163,12 @@ a {
   line-height: 1.1;
   margin-bottom: 0.8333333333rem;
   text-transform: uppercase;
+}
+@media screen and (max-width: 480px) {
+  .hero__main-title {
+    font-size: 1.7777777778rem;
+    line-height: 1;
+  }
 }
 
 .hero__title-desc {
@@ -403,12 +409,13 @@ a {
 @media screen and (max-width: 480px) {
   .section__title {
     font-size: 2.2222222222rem;
+    padding-top: 10%;
   }
 }
 
 .map-section {
   background: url(../img/map.png) center top no-repeat;
-  background-size: contain;
+  background-size: cover;
   position: relative;
 }
 
@@ -699,6 +706,11 @@ a {
     padding: 0 15%;
   }
 }
+@media screen and (max-width: 480px) {
+  .form {
+    padding: 0 1%;
+  }
+}
 
 .form__col {
   -webkit-box-flex: 1;
@@ -825,6 +837,17 @@ a {
   background: #fff;
   bottom: 0px;
   left: 0rem;
+  max-height: 5.2222222222rem;
+}
+@media screen and (max-width: 768px) {
+  .footer {
+    min-height: 5.7777777778rem;
+  }
+}
+@media screen and (max-width: 480px) {
+  .footer {
+    min-height: 8.3333333333rem;
+  }
 }
 
 .footer__content {

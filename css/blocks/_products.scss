@@ -1,0 +1,32 @@
+.product__container {
+    position: relative;
+    display: flex;
+}
+
+.product__col {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.product__title {
+    font-size: rem(36px);
+    font-weight: 700;
+}
+
+.product__tags {
+    display: inline-flex;
+    flex-wrap: nowrap;
+}
+
+.product__col--tags {
+    margin-right: rem(56px);
+
+    &:last-child {
+        margin-right: 0;
+    }
+}
+
+.board__options {
+    font-weight: 700;
+}

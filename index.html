@@ -144,8 +144,8 @@
             <section class="section products-section">
                 <div class="container">
                     <div class="product-slider">
-                        <div class="product-slider__arrows">
-                            <a href="#" class="product-slider__arrows product-slider__arrows--direction--prev" id="left">
+                        <div class="product-slider__arrows arrow-left">
+                            <a href="#" class="arrows--direction--prev" id="left">
                                 <svg class="slider-arrows slider-arrows--left">
                                     <use xlink:href="./sprite.svg#arrow-left"></use>
                                 </svg>
@@ -158,7 +158,7 @@
                                         <img src="./img/longboard.svg" alt="board-image">
                                     </div>
                                     <div class="product__col">
-                                        <div class="product__oprions">
+                                        <div class="product__options">
                                             <img src="./img/menu-item.svg" alt="options-item">
                                             <a href="#" class="dropdown__link">Параметры</a>
                                             <div class="dropdown__menu">
@@ -194,13 +194,13 @@
                             </li>
                             <li class="products__item product"></li>
                         </ul>
-                    </div>
-                    <div class="product-slider__arrows">
-                        <a href="#" class="product-slider__arrows product-slider__arrows--direction--next" id="right">
-                            <svg class="slider-arrows slider-arrows--right">
-                                <use xlink:href="./sprite.svg#arrow-right"></use>
-                            </svg>
-                        </a>
+                        <div class="product-slider__arrows arrow-right">
+                            <a href="#" class="arrows--direction--next" id="right">
+                                <svg class="slider-arrows slider-arrows--right">
+                                    <use xlink:href="./sprite.svg#arrow-right"></use>
+                                </svg>
+                            </a>
+                        </div>
                     </div>
                 </div>
             </section>
@@ -414,11 +414,42 @@
             </li>
         </ul>
     </nav>
-    <a href="#" class="hamburger">
-        <span class="hamburger__plank"></span>
-        <span class="hamburger__plank"></span>
-        <span class="hamburger__plank"></span>
-    </a>
+    <button class="burger" id="burger">
+        <span class="burger__line"></span>
+        <span class="burger__line"></span>
+        <span class="burger__line"></span>
+    </button>
+    <div class="overlay" id="overlay">
+        <div class="overlay__menu" id="overlay__menu">
+            <nav class="menu menu--vertical">
+                <ul class="menu__list">
+                    <li class="menu__item">
+                        <a href="#" class="menu__link">О нас</a>
+                    </li>
+                    <li class="menu__item">
+                        <a href="#" class="menu__link">Серфборды</a>
+                    </li>
+                    <li class="menu__item">
+                        <a href="#" class="menu__link">Команда</a>
+                    </li>
+                    <li class="menu__item">
+                        <a href="#" class="menu__link">Меню</a>
+                    </li>
+                    <li class="menu__item">
+                        <a href="#" class="menu__link">Отзывы</a>
+                    </li>
+                    <li class="menu__item">
+                        <a href="#" class="menu__link">Как мы работаем</a>
+                    </li>
+                    <li class="menu__item">
+                        <a href="#" class="menu__link">Контакты </a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
     </div>
+    
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.4/jquery.min.js" integrity="sha512-pumBsjNRGGqkPzKHndZMaAG+bir374sORyzM3uulLV14lN5LyykqNk8eEeUlUkB3U0M4FApyaHraT65ihJhDpQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 </body>
 </html>

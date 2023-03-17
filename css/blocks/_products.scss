@@ -16,17 +16,26 @@
 }
 
 .product__title {
-    font-size: rem(36px);
+    font-size: rem(18px);
     font-weight: 700;
+    text-transform: uppercase;
+    margin-top: rem(50px);
 }
 
 .product__description {
-    padding-right:  25px;
+    padding-right:  rem(25px);
+    margin: 0;
+
+    &:last-child {
+        padding-right: 0;
+    }
 }
 
 .product__tags {
-    display: inline-flex;
-    flex-wrap: nowrap;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: baseline;
 }
 
 .product__col--tags {
@@ -39,4 +48,18 @@
 
 .board__options {
     font-weight: 700;
+}
+
+.product_-price {
+    font-size: 26px;
+    margin-left: 20px;
+    margin: 0;
+}
+
+.product__options {
+    background: url(/surfboard1/img/menu-item.svg) center center no-repeat;
+    background-color: $blue;
+    width: rem(90px);
+    height: rem(90px);
+    border-radius: 6px;
 }

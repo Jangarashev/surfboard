@@ -7,11 +7,21 @@
     display: flex;
     flex-direction: column;
     justify-content: space-around;
+    margin-left: 8%;
+
+    &::before {
+        background: url(/surfboard1/img/surfboard-background.svg);
+        overflow: hidden;
+    }
 }
 
 .product__title {
     font-size: rem(36px);
     font-weight: 700;
+}
+
+.product__description {
+    padding-right:  25px;
 }
 
 .product__tags {

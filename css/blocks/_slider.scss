@@ -1,3 +1,12 @@
-.product-slider__arrows {
-    position: relative;
+.product-slider {
+    display: flex;
+    align-items: center;
+}
+
+.arrow-left {
+    margin-left: 3%;
+}
+
+.arrow-right {
+    margin-right: 3%;
 }

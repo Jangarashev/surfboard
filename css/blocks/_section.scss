@@ -5,6 +5,10 @@
     flex-direction: column;
     justify-content: center;
 
+    @include tablets {
+        height: 100%;
+    }
+
     @include phones {
         height: 100%;
     }

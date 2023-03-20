@@ -155,7 +155,7 @@
                             <li class="products__item product">
                                 <div class="product__container">
                                     <div class="product__col">
-                                        <img src="./img/longboard.svg" alt="board-image">
+                                        <img src="./img/longboard.svg" alt="board-image" class="product__img">
                                     </div>
                                     <div class="product__col">
                                         <div class="product__options">
@@ -415,42 +415,55 @@
             </li>
         </ul>
     </nav>
-    <button class="burger" id="burger">
+    <div class="content">
+        <div class="content__title">Burger Menu</div>
+      
+      <div class="burger" id="burger">
         <span class="burger__line"></span>
         <span class="burger__line"></span>
         <span class="burger__line"></span>
-    </button>
-    <div class="overlay" id="overlay">
+      </div>
+      
+      <div class="overlay" id="overlay">
         <div class="overlay__menu" id="overlay__menu">
-            <nav class="menu menu--vertical">
-                <ul class="menu__list">
-                    <li class="menu__item">
-                        <a href="#" class="menu__link">О нас</a>
-                    </li>
-                    <li class="menu__item">
-                        <a href="#" class="menu__link">Серфборды</a>
-                    </li>
-                    <li class="menu__item">
-                        <a href="#" class="menu__link">Команда</a>
-                    </li>
-                    <li class="menu__item">
-                        <a href="#" class="menu__link">Меню</a>
-                    </li>
-                    <li class="menu__item">
-                        <a href="#" class="menu__link">Отзывы</a>
-                    </li>
-                    <li class="menu__item">
-                        <a href="#" class="menu__link">Как мы работаем</a>
-                    </li>
-                    <li class="menu__item">
-                        <a href="#" class="menu__link">Контакты </a>
-                    </li>
-                </ul>
-            </nav>
+          <nav class="menu menu--vertical">
+            <ul class="menu__list">
+              <li class="menu__item">
+                <a href="#" class="menu__link">
+                    О нас
+                </a>
+              </li>
+              <li class="menu__item">
+                <a href="#" class="menu__link">
+                    Серфборды
+                </a>
+              </li>
+              <li class="menu__item">
+                <a href="#" class="menu__link">
+                    Команда
+                </a>
+              </li>
+              <li class="menu__item">
+                <a href="#" class="menu__link">
+                    Отзывы
+                </a>
+              </li>
+              <li class="menu__item">
+                <a href="#" class="menu__link">
+                    Как мы работаем
+                </a>
+              </li>
+              <li class="menu__item">
+                <a href="#" class="menu__link">
+                    Контакты
+                </a>
+              </li>
+            </ul>
+          </nav>
         </div>
+      </div>    
     </div>
-    
-    </div>
+    <script>scr="./js/hamburger.js"</script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.4/jquery.min.js" integrity="sha512-pumBsjNRGGqkPzKHndZMaAG+bir374sORyzM3uulLV14lN5LyykqNk8eEeUlUkB3U0M4FApyaHraT65ihJhDpQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 </body>
 </html>

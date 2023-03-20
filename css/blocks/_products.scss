@@ -1,6 +1,11 @@
 .product__container {
     position: relative;
     display: flex;
+
+    @include tablets {
+        flex-direction: column;
+        height: 100%;
+    }
 }
 
 .product__col {
@@ -12,6 +17,19 @@
     &::before {
         background: url(/surfboard1/img/surfboard-background.svg);
         overflow: hidden;
+    }
+
+    @include tablets {
+        margin: 0;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+    
+}
+
+.product__img {
+    @include tablets {
+        scale: 75%;
     }
 }
 
@@ -29,6 +47,12 @@
     &:last-child {
         padding-right: 0;
     }
+
+    @include tablets {
+        text-align: center;
+        padding: 0;
+    }
+
 }
 
 .product__tags {
@@ -36,6 +60,11 @@
     flex-wrap: wrap;
     justify-content: space-between;
     align-items: baseline;
+
+    @include tablets {
+        margin-right: 25px;
+    }
+
 }
 
 .product__col--tags {
@@ -44,10 +73,13 @@
     &:last-child {
         margin-right: 0;
     }
+
+
 }
 
 .board__options {
     font-weight: 700;
+    
 }
 
 .product_-price {
@@ -62,4 +94,8 @@
     width: rem(90px);
     height: rem(90px);
     border-radius: 6px;
+
+    @include tablets {
+        display: none;
+    }
 }

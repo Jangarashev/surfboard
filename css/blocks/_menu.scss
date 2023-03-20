@@ -1,5 +1,6 @@
 .menu {
     margin-right: 50px;
+
     @include tablets {
         display: none;
     }
@@ -41,11 +42,34 @@
 }
 
 .menu--vertical {
-    position: absolute;
-    display: none;
-    width: 100%;
-    height: 100%;
-    background: #313131;
-    color: #fff;
-    flex-direction: column;
+    &__item{
+      margin-bottom:20px;
+      display:flex;
+      flex-direction:column;
+      align-items:center;
+      
+      &:after{
+        content:'';
+        display: inline-block;
+        height: 5px;
+        width: 5px;
+        background-color: #fff;
+        border-radius:50%;
+        margin-top:10px;
+      }
+      
+      &:last-child{
+        margin-bottom:0;
+        
+        &:after{
+          display:none;
+        }
+      }
+    }
+    
+    &__link{
+      &:hover{
+        opacity:.7;
+      }
+    }
 }

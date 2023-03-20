@@ -4,7 +4,6 @@
 
     @include tablets {
         flex-direction: column;
-        height: 100%;
     }
 }
 
@@ -60,21 +59,19 @@
     flex-wrap: wrap;
     justify-content: space-between;
     align-items: baseline;
-
-    @include tablets {
-        margin-right: 25px;
-    }
-
 }
 
-.product__col--tags {
+.col--tags {
+    
     margin-right: rem(56px);
 
     &:last-child {
         margin-right: 0;
     }
 
-
+    @include tablets {
+        
+    }
 }
 
 .board__options {
@@ -86,16 +83,4 @@
     font-size: 26px;
     margin-left: 20px;
     margin: 0;
-}
-
-.product__options {
-    background: url(/surfboard1/img/menu-item.svg) center center no-repeat;
-    background-color: $blue;
-    width: rem(90px);
-    height: rem(90px);
-    border-radius: 6px;
-
-    @include tablets {
-        display: none;
-    }
 }

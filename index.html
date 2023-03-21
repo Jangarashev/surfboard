@@ -250,41 +250,80 @@
                     <h2 class="section__title">Отзывы</h2>
                     <div class="reviews">
                         <div class="reviews__display">
-                            <div class="reviews__display-inner">
-                                <div class="reviews__avatar">
-                                    <img src="./img/beauty.png" alt="black hair girl" class="reviews__avatar-img">
-                                </div>
-                                <article class="reviews__content">
-                                    <h3 class="reviews__title">Лучший дизайн</h3>
-                                    <div class="reviews__text">
-                                        <p>
-                                            Я увидела доски на сайте и влюбилась в их дизайн. К летнему сезону я заказала себе доску в SurfBoard. Дизайнер команды - волшебница! Она учла все мои предпочтения и комментарии. В итоге получился прекрасный дизайн. А я катаюсь на доске, которая мне нравится)
-
-                                        </p>
-                                    </div>
-                                    <div class="reviews__author">Ольга Макарова</div>
-                                </article>
-                            </div>
+                            <ul class="reviews__list" id="list">
+                                <li class="reviews__item reviews__item--active" data-item="one">
+                                    <div class="reviews__display-inner">
+                                        <div class="reviews__avatar">
+                                            <img src="./img/beauty.png" alt="black hair girl" class="reviews__avatar-img">
+                                        </div>
+                                        <article class="reviews__content">
+                                            <h3 class="reviews__title">Лучший дизайн</h3>
+                                            <div class="reviews__text">
+                                                <p>
+                                                    Я увидела доски на сайте и влюбилась в их дизайн. К летнему сезону я заказала себе доску в SurfBoard. Дизайнер команды - волшебница! Она учла все мои предпочтения и комментарии. В итоге получился прекрасный дизайн. А я катаюсь на доске, которая мне нравится)
+        
+                                                </p>
+                                            </div>
+                                            <div class="reviews__author">Ольга Макарова</div>
+                                        </article>
+                                    </div> 
+                                </li>
+                                <li class="reviews__item" data-item="two">
+                                    <div class="reviews__display-inner">
+                                        <div class="reviews__avatar">
+                                            <img src="./img/boy.png" alt="guy in a cap" class="reviews__avatar-img">
+                                        </div>
+                                        <article class="reviews__content">
+                                            <h3 class="reviews__title">Нереальная скорость</h3>
+                                            <div class="reviews__text">
+                                                <p>
+                                                    Я занимаюсь профессиональным спортом. Доверил изготовление доски для соревнований ребятам из Surfboard и не пожалел: 1 место на соревнованиях. 
+                                                    Нереальная скорость, устойчивая, удобная и легкая: всё что нужно для победы на соревнованиях!
+                                                            
+                                                </p>
+                                            </div>
+                                            <div class="reviews__author">Марк Брюлов</div>
+                                        </article>
+                                    </div> 
+                                </li>
+                                <li class="reviews__item" data-item="three">
+                                    <div class="reviews__display-inner">
+                                        <div class="reviews__avatar">
+                                            <img src="./img/boy2.png" alt="big guy" class="reviews__avatar-img">
+                                        </div>
+                                        <article class="reviews__content">
+                                            <h3 class="reviews__title">Устойчивость и безопасность</h3>
+                                            <div class="reviews__text">
+                                                <p>
+                                                    Я заказывал доски для своих детей. Мне было важно, чтобы они были устойчивые, так как безопасность детей на первом месте. Доски были изготовлены по индивидуальным замерам с учетом роста и веса каждого ребенка. Теперь дети катаются и им нравится!        
+                                                </p>
+                                            </div>
+                                            <div class="reviews__author">Василий Поперечный
+                                            </div>
+                                        </article>
+                                    </div> 
+                                </li>
+                            </ul>
                         </div>
-                        <ul class="reviews__switcher">
-                            <li class="reviews__switcher-item interactive-avatar interactive-avatar--active">
-                                <a href="#" class="interactive-avatar__link">
+                        <ul class="reviews__switcher" id="reviewsSwitcher">
+                            <li class="reviews__switcher-item reviews__switcher-item--active">
+                                <a href="#" class="reviews-switcher__link" data-open="one">
                                     <img 
                                     src="./img/beauty.png" 
                                     alt="black hair girl" 
                                     class="interactive-avatar__img">
                                 </a>
                             </li>
-                            <li class="reviews__switcher-item interactive-avatar">
-                                <a href="#" class="interactive-avatar__link">
+                            <li class="reviews__switcher-item">
+                                <a href="#" class="reviews-switcher__link" data-open="two">
                                     <img 
                                     src="./img/boy.png" 
                                     alt="guy in a cap" 
                                     class="interactive-avatar__img">
                                 </a>
                             </li>
-                            <li class="reviews__switcher-item interactive-avatar">
-                                <a href="#" class="interactive-avatar__link">
+                            <li class="reviews__switcher-item">
+                                <a href="#" class="reviews-switcher__link" data-open="three">
                                     <img 
                                     src="./img/boy2.png" 
                                     alt="big guy" 
@@ -503,6 +542,7 @@
       </div>    
     </div>
     <script scr="./js/hamburger.js"></script>
+    <script src="./js/tabs.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.4/jquery.min.js" integrity="sha512-pumBsjNRGGqkPzKHndZMaAG+bir374sORyzM3uulLV14lN5LyykqNk8eEeUlUkB3U0M4FApyaHraT65ihJhDpQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 </body>
 </html>

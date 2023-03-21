@@ -1,17 +1,26 @@
-.interactive-avatar {
+.reviews__switcher-item {
     width: rem(74px);
     height: rem(74px);
     border: rem(6px) solid transparent;
     border-radius: 50%;
     overflow: hidden;
     position: relative;
+    cursor: pointer;
+
+    &:hover {
+        border-color: $yellow;
+    }
 
     &--active {
         border-color: $yellow;
     }
 }
 
-.interactive-avatar__link {
+
+
+
+
+.reviews-switcher__link {
     position: absolute;
     top: 0;
     left: 0;

@@ -4,6 +4,31 @@
     margin-bottom: rem(16px);
 }
 
+.reviews__list {
+    position: relative;
+    min-height: rem(280px);
+}
+
+.reviews__item {
+    position: absolute;
+    display: flex;
+    pointer-events: none;
+    opacity: 0;
+    left: rem(-9999px);
+    transition: opacity .3s;
+
+    &:nth-child(1) {
+        position: relative;
+        opacity: 1;
+        left: initial;
+    }
+
+    &--active {
+    opacity: 1;
+    pointer-events: unset;
+    left: initial;
+}}
+
 .reviews__display-inner {
     display: flex;
 

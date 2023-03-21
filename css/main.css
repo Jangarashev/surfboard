@@ -819,6 +819,20 @@ a {
   margin-right: 3%;
 }
 
+.acco-container {
+  height: 100vh;
+  background: url(../img/acco-bg-active.jfif) center center no-repeat;
+  background-size: cover;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.acco__title {
+  color: #fff;
+  margin: 5% 5%;
+}
+
 .acco__menu {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -847,10 +861,11 @@ a {
 }
 
 .acco__button {
-  color: inherit;
+  color: #fff;
   min-width: 5.5555555556rem;
   background: center center/cover no-repeat;
   position: relative;
+  height: 100vh;
 }
 
 .acco__button-text {
@@ -873,6 +888,7 @@ a {
   overflow: hidden;
   -webkit-transition: width 0.3s;
   transition: width 0.3s;
+  height: 100vw;
 }
 
 .acco__desc {
@@ -880,6 +896,7 @@ a {
   opacity: 0;
   -webkit-transition: opacity 0.3s;
   transition: opacity 0.3s;
+  color: #fff;
 }
 
 .reviews__display {

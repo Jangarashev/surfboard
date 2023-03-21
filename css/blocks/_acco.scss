@@ -1,3 +1,15 @@
+.acco-container {
+    height: 100vh;
+    background: url(../img/acco-bg-active.jfif) center center no-repeat;
+    background-size: cover;
+    display: flex;
+}
+
+.acco__title {
+    color: #fff;
+    margin: 5% 5%;
+}
+
 .acco__menu {
     display: flex;
     position: absolute;
@@ -15,6 +27,7 @@
     display: flex;
 
     &--active {
+
         .acco-desc {
             opacity: 1;
         }
@@ -22,10 +35,11 @@
 }
 
 .acco__button {
-    color: inherit;
+    color: #fff;
     min-width: rem(100px);
     background: center center / cover no-repeat;
     position: relative;
+    height: 100vh;
 }
 
 .acco__button-text {
@@ -45,10 +59,12 @@
     width: 0;
     overflow: hidden;
     transition: width 0.3s;
+    height: 100vw;
 }
 
 .acco__desc {
     padding: rem(30px) rem(40px);
     opacity: 0;
     transition: opacity .3s;
+    color: #fff;
 }

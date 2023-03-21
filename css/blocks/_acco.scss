@@ -1,0 +1,54 @@
+.acco__menu {
+    display: flex;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+
+    @include phones {
+        width: 100%;
+        justify-content: flex-end;
+    }
+}
+
+.acco__item {
+    display: flex;
+
+    &--active {
+        .acco-desc {
+            opacity: 1;
+        }
+    }
+}
+
+.acco__button {
+    color: inherit;
+    min-width: rem(100px);
+    background: center center / cover no-repeat;
+    position: relative;
+}
+
+.acco__button-text {
+    position: absolute;
+    transform: rotate(-90deg) translateY(-50%);
+    transform-origin: 0 0;
+    left: 50%;
+    bottom: rem(40px);
+    bottom: rem(40px);
+    font-size: rem(36px);
+    white-space: nowrap;
+    font-weight: 700;
+}
+
+.acco__content {
+    background: rgba(51, 53, 55, 0.9);
+    width: 0;
+    overflow: hidden;
+    transition: width 0.3s;
+}
+
+.acco__desc {
+    padding: rem(30px) rem(40px);
+    opacity: 0;
+    transition: opacity .3s;
+}

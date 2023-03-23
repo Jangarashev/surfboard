@@ -1,0 +1,30 @@
+.team {
+    display: flex;
+    justify-content: space-between;
+}
+
+.team__item {
+    flex: 1;
+    position: relative;
+    text-align: center;
+    margin-right: rem(20px);
+    max-width: rem(220px);
+}
+
+.team__title {
+    color: #000;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    font-size: rem(21px);
+    font-weight: 700;
+    margin-bottom: rem(20px);
+}
+
+.team__content {
+    position: absolute;
+    top: 100%;
+    overflow: hidden;
+    transition: height .3s;
+    height: 0;
+}

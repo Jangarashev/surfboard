@@ -6,19 +6,17 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Surfboard</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.css">
     <link rel="stylesheet" href="./css/main.css">
-    <link
-    rel="stylesheet"
-    href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.css"
-    />
-
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.css" />
+    
 </head>
 
 <body>
     <div class="wrapper">
         <div class="maincontent">
 
-            <section class="hero">
+            <section data-sidemenu-theme="white" class="section hero-section">
                 <div class="container hero__container">
                     <header class="header">
                         <div class="header__column">
@@ -100,7 +98,7 @@
                     </div>
                 </div>
             </section>
-            <section class="section benefits-section">
+            <section data-sidemenu-theme="white" class="section benefits-section">
                 <div class="container">
                     <div class="headline">
                         <h2 class="section__title headline__title">почему Surfboard?</h2>
@@ -153,19 +151,19 @@
                     </ul>
                 </div>
             </section>
-            <section class="section products-section">
+            <section data-sidemenu-theme="white" class="section products-section">
                 <div class="container">
                     <div class="product-slider">
-                        <div class="product-slider__arrows arrow-left">
-                            <a href="#" class="arrows--direction--prev" id="left">
+                        <div class="product-slider__arrows--arrow-left"> 
+                            <a href="#" class="arrows__direction--prev" id="left">
                                 <svg class="slider-arrows slider-arrows--left">
                                     <use xlink:href="./sprite.svg#arrow-left"></use>
                                 </svg>
                             </a>
                         </div>
-                        <ul class="products">
-                            <li class="products__item product">
-                                <div class="product__container">
+                        <ul class="products__list">
+                            <li class="products__item product__item--active">
+                                <div class="product__content product__content--active" data-item="long">
                                     <div class="product__col">
                                         <img src="./img/longboard.svg" alt="board-image" class="product__img">
                                     </div>
@@ -240,7 +238,7 @@
                                                 <h3 class="product__description">Ширина доски</h3>
                                                 <p class="board__options">от 40 сантиметров</p>
                                             </div>
-                                            <div class="product_-price">
+                                            <div class="product__price">
                                                 <h1>7000 ₽</h1>
                                             </div>
                                             <a href="#" class="button shop-button">Заказать</a>
@@ -248,19 +246,101 @@
                                     </div>
                                 </div>
                             </li>
-                            <li class="products__item product"></li>
+                            <li class="products__item product__item--short">
+                                <div class="product__content" data-item="short">
+                                    <div class="product__col">
+                                        <img src="./img/shortboard.svg" alt="board-image" class="product__img">
+                                    </div>
+                                    <div class="product__col">
+                                        <div class="product__options">
+                                            <a href="#" class="dropdown__link">Параметры</a>
+                                            <div class="dropdown__menu">
+                                                <ul class="dropdown__list">
+                                                    <li class="dropdown__item">
+                                                        <div class="item-column">
+                                                            <img src="./img/length.svg" alt="length">
+                                                            Длина доски
+                                                        </div>
+                                                        <div class="item-column">
+                                                            <p>от 1,5 м</p>
+                                                        </div>
+                                                    </li>
+                                                    <li class="dropdown__item">
+                                                        <div class="item-column">
+                                                            <img src="./img/width.svg" alt="width">
+                                                            Ширина доски
+                                                        </div>
+                                                        <div class="item-column">
+                                                            <p>от 30 см</p>
+                                                        </div>
+                                                    </li>
+                                                    <li class="dropdown__item">
+                                                        <div class="item-column">
+                                                            <img src="./img/thickness.png" alt="thickness">
+                                                            Толщина
+                                                        </div>
+                                                        <div class="item-column">
+                                                            <p>8 см</p>
+                                                        </div>
+                                                    </li>
+                                                    <li class="dropdown__item">
+                                                        <div class="item-column">
+                                                            <img src="./img/life-time.svg" alt="life-time">
+                                                            Срок службы
+                                                        </div>
+                                                        <div class="item-column">
+                                                            <p>5 лет</p>
+                                                        </div>
+                                                    </li>
+                                                    <li class="dropdown__item">
+                                                        <div class="item-column">
+                                                            <img src="./img/weight.svg" alt="weight">
+                                                            Вес
+                                                        </div>
+                                                        <div class="item-column">
+                                                            <p>7-8 кг</p>
+                                                        </div>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                        <div class="product__title">
+                                            <h1>Шортборд</h1>
+                                        </div>
+                                        <div class="product__description">
+                                            <p>Самые быстрые доски для профессионалов. Размеры шортбордов позволяют быстро набирать скорость, делать различные трюки на волне, включая резкие повороты и развороты, флоатеры (проезды по самому гребню волны), различные прыжки с вращениями или без, а также катание 
+                                                в трубах.
+                                                </p>
+                                        </div>
+                                        <div class="product__tags">
+                                            <div class="col--tags">
+                                                <h3 class="product__description">Длина доски</h3>
+                                                <p class="board__options">от 1,5 метров</p>
+                                            </div>
+                                            <div class="col--tags">
+                                                <h3 class="product__description">Ширина доски</h3>
+                                                <p class="board__options">от 30 сантиметров</p>
+                                            </div>
+                                            <div class="product__price">
+                                                <h1>12000 ₽</h1>
+                                            </div>
+                                            <a href="#" class="button shop-button">Заказать</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
                         </ul>
-                        <div class="product-slider__arrows arrow-right">
-                            <a href="#" class="arrows--direction--next" id="right">
+                        <div class="product-slider__arrows--arrow-right"> 
+                            <a href="#" class="arrows__direction--next" id="right">
                                 <svg class="slider-arrows slider-arrows--right">
                                     <use xlink:href="./sprite.svg#arrow-right"></use>
                                 </svg>
                             </a>
                         </div>
-                    </div>
+                    </div>  
                 </div>
             </section>
-            <section class="section team-section">
+            <section data-sidemenu-theme="white" class="section team-section">
                 <container class="container">
                     <h1 class="section__title">Команда</h1>
                     <ul class="team team--version--desktop">
@@ -323,7 +403,7 @@
                     </ul>
                 </container>
             </section>
-            <section class="section acco-section">
+            <section data-sidemenu-theme="white" class="section acco-section">
                 <div class="container acco-container">
                     <h2 class="section__title acco__title">Меню</h2>
                     <ul class="acco__menu" id="horizontalMenu">
@@ -372,13 +452,13 @@
                     </ul>
                 </div>
             </section>
-            <section class="section reviews-section">
+            <section data-sidemenu-theme="white" class="section reviews-section">
                 <div class="container">
                     <h2 class="section__title">Отзывы</h2>
                     <div class="reviews">
                         <div class="reviews__display">
-                            <ul class="reviews__list" id="list">
-                                <li class="reviews__item" data-item="one">
+                            <ul class="reviews__list" id="review">
+                                <li class="reviews__item review review--active" data-item="one">
                                     <div class="reviews__display-inner">
                                         <div class="reviews__avatar">
                                             <img src="./img/beauty.png" alt="black hair girl"
@@ -399,7 +479,7 @@
                                         </article>
                                     </div>
                                 </li>
-                                <li class="reviews__item" data-item="two">
+                                <li class="reviews__item review" data-item="two">
                                     <div class="reviews__display-inner">
                                         <div class="reviews__avatar">
                                             <img src="./img/boy.png" alt="guy in a cap" class="reviews__avatar-img">
@@ -420,7 +500,7 @@
                                         </article>
                                     </div>
                                 </li>
-                                <li class="reviews__item" data-item="three">
+                                <li class="reviews__item review" data-item="three">
                                     <div class="reviews__display-inner">
                                         <div class="reviews__avatar">
                                             <img src="./img/boy2.png" alt="big guy" class="reviews__avatar-img">
@@ -462,7 +542,7 @@
                     </div>
                 </div>
             </section>
-            <section class="section order-section">
+            <section data-sidemenu-theme="white" class="section order-section">
                 <div class="container">
                     <h2 class="section__title order__title">
                         закажите доску
@@ -538,7 +618,7 @@
                     </form>
                 </div>
             </section>
-            <section class="section map-section">
+            <section data-sidemenu-theme="white" class="section map-section">
                 <footer class="footer">
                     <div class="footer__content">
                         <div class="footer__col">
@@ -592,7 +672,7 @@
             </section>
         </div>
     </div>
-    <nav class="fixed-menu">
+    <nav class="fixed-menu fixed-menu--shadowed">
         <ul class="fixed-menu__list">
             <li class="fixed-menu__item fixed-menu__item--active">
                 <a href="" class="fixed-menu__link" data-scroll-to="hero"></a>
@@ -623,9 +703,6 @@
             </li>
         </ul>
     </nav>
-    
-    <div class="content">
-    </div>
 
     <div class="burger" id="burger">
         <span class="burger__line"></span>
@@ -681,15 +758,21 @@
             </div>
         </div>
     </div>
-    <script src="./js/hamburger.js"></script>
-    <script src="./js/tabs.js"></script>
-    <script src="./js/horizontal-acco.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.4/jquery.min.js"
+     
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.4/jquery.min.js" 
         integrity="sha512-pumBsjNRGGqkPzKHndZMaAG+bir374sORyzM3uulLV14lN5LyykqNk8eEeUlUkB3U0M4FApyaHraT65ihJhDpQ=="
         crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-        <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.umd.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.umd.js"></script>
+    <script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>
+    <script src="./js/shop-slider.js"></script>
+    <!-- <script src="./js/hamburger.js"></script> 
+    <script src="./js/tabs.js"></script>
+    <script src="./js/horizontal-acco.js"></script>
     <script src="./js/modal.js"></script>
     <script src="./js/paginator.js"></script>
+    <script src="./js/tabs.js"></script>-->
+
+
 </body>
 
 </html>

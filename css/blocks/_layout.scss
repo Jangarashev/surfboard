@@ -25,20 +25,15 @@ body {
 
 .wrapper {
     position: relative;
-    min-width: 100%;
+    width: 100%;
+    min-width: $containerWidth + 20px;
     min-height: 100%;
     overflow-x: hidden;
 }
 
-.maincontent {
-    height: 100%;
-}
-
 .container {
-    width: 95%;
-    max-width: $containerWidth;
+    width: $containerWidth;
     margin: 0 auto;
-    position: relative;
 }
 
 // tag styles reset

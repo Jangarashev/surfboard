@@ -36,6 +36,7 @@
     font-weight: 700;
     padding-top: rem(10px);
     color: $black;
+    margin-bottom: 20px;
 
     @include phones {
         text-align: left;

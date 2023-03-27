@@ -1,32 +1,12 @@
-.product__options {
-    width: rem(90px);
-    height: rem(90px);
-    border-radius: 6px;
-    background: url(./img/menu-item.svg) center center no-repeat;
-    background-color:#3A587E ;
-    text-align: center;
-    position: relative;
-    display: inline-block;
-
-        &:hover .dropdown__menu {
-        left: 90px;
-        display: block;
-        background: #d5d5d5;
-        transition: opacity .3s;
-    }
-
-    @include tablets {
-        display: none;
-    }
-}
-
 .dropdown__link {
     font-weight: 700;
     font-size: 14px;
     color: #fff;
     text-transform: uppercase;
-    margin-top: 50px;
-
+    text-decoration: none;
+    position: absolute;
+    left: rem(5px);
+    bottom: rem(10px);
     @include tablets {
         display: none;
     }
@@ -34,7 +14,7 @@
 
 .dropdown__menu {
     position: relative;
-    left: 2000px;
+    left: 9000px;
     background: #d1d1d1;
     border-radius: 5px;
     min-width: rem(270px) ;

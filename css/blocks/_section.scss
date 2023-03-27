@@ -4,6 +4,7 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
+    height: 100vh;
 
     @include tablets {
         height: 100%;
@@ -11,6 +12,24 @@
 
     @include phones {
         height: 100%;
+    }
+}
+
+.hero-section {
+    background: url(../img/welcome-page.jfif) center bottom no-repeat;
+    background-size: cover;
+    background-color: $blue;
+    color: #fff;
+
+    @include tablets {
+        background: url(../img/welcome-768.png) center top rem(91px) no-repeat;
+        background-color: $blue;
+    }
+
+    @include phones {
+        background-size: cover;
+        background-color: $blue;
+        background-position: top 91px center;
     }
 }
 
@@ -27,6 +46,8 @@
         padding-top: 10%;
     }
 }
+
+
 
 .product-section {
     background: #F8FAF9;

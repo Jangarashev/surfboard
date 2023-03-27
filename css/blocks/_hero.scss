@@ -1,23 +1,3 @@
-.hero {
-    background: url(../img/welcome-page.jfif) center bottom no-repeat;
-    background-size: cover;
-    background-color: $black;
-    height: 100vh;
-    min-height: rem(650px);
-    color: #fff;
-
-    @include tablets {
-        background: url(../img/welcome-768.png) center top rem(91px) no-repeat;
-        background-color: $blue;
-    }
-
-    @include phones {
-        background-size: cover;
-        background-color: $blue;
-        background-position: top 91px center;
-    }
-}
-
 .hero__container {
     display: flex;
     flex-direction: column;
@@ -73,6 +53,6 @@
 .hero__title-desc {
     font-size: rem(21px);
     font-weight: 400;
-    margin: rem(35px) 0;
-    padding-bottom: rem(15px);
+    margin: rem(40px) 0;
+    padding-bottom: rem(20px);
 }

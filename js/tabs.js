@@ -3,13 +3,13 @@ const reviewsSwitcher = document.querySelector('#reviewsSwitcher');
 // функиця показа нужного отзыва по имени
 const findReview = (reviewId) => {
   // находим текущий отображаемый отзыв (у него должен быть активный класс)
-  const activeReview = document.querySelector('.reviews__item--active');
+  const activeReview = document.querySelector(".review--active");
   // снимаем с текущего отображаемого отзыва активный класс
-  activeReview.classList.remove('reviews__item--active');
+  activeReview.classList.remove("review--active");
   // находим нужный отзыв по имени (по селектору дата атрибута)
-  const currentReview = document.querySelector(`.reviews__list[data-item="${reviewId}"]`);
+  const currentReview = document.querySelector(`.review[data-item="${reviewId}"]`);
   // и ставим на него активный класс (фактически показываем нужный отзыв)
-  currentReview.classList.add('reviews__item--active');
+  currentReview.classList.add("review--active");
 };
 // при кликах на список аватарок
 reviewsSwitcher.addEventListener("click", (e) => {

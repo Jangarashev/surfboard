@@ -1,4 +1,4 @@
-$containerWidth: 1100px;
+$containerWidth: 1060px;
 $baseFontSize: 18px;
 
 //breakpoints
@@ -45,7 +45,7 @@ $z-fixed-menu:100;
   @import "blocks/dropdown__menu";
   @import "blocks/_slider";
   @import "blocks/team";
-  @import "blocks/acco";
+  // @import "blocks/acco";
   @import "blocks/_reviews";
   @import "blocks/_interactive-avatar";
   @import "blocks/_order";

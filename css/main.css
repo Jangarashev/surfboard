@@ -872,8 +872,27 @@ a {
   margin-right: 1.1111111111rem;
   max-width: 12.2222222222rem;
 }
+.team__item.active .team__title:after {
+  content: "";
+  -webkit-transform: rotate(-180deg);
+          transform: rotate(-180deg);
+}
+
+.team__member {
+  height: 16rem;
+  margin-bottom: 1.1111111111rem;
+}
+
+.team__member-pic {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
 
 .team__title {
+  background-color: inherit;
+  border: inherit;
   color: #000;
   display: -webkit-inline-box;
   display: -ms-inline-flexbox;
@@ -888,6 +907,18 @@ a {
   font-weight: 700;
   margin-bottom: 1.1111111111rem;
 }
+.team__title:after {
+  content: "";
+  width: 0;
+  height: 0;
+  border: 0 solid transparent;
+  border-right-width: 4px;
+  border-left-width: 4px;
+  border-top: 6px solid black;
+  border-bottom: 0;
+  display: block;
+  margin-left: 5px;
+}
 
 .team__content {
   position: absolute;
@@ -896,6 +927,11 @@ a {
   -webkit-transition: height 0.3s;
   transition: height 0.3s;
   height: 0;
+}
+
+.team__occ {
+  color: #292929;
+  font-weight: 400;
 }
 
 .reviews__display {

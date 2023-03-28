@@ -2,6 +2,10 @@
     background: #F8FAF9;
     padding: rem(45px) rem(45px);
     margin-bottom: rem(16px);
+
+    display: flex;
+    overflow: hidden;
+    position: relative;
 }
 
 .reviews__list {
@@ -24,10 +28,11 @@
     }
 
     &.active {
-    opacity: 1;
-    pointer-events: unset;
-    left: initial;
-    position: relative;
+        position: static;
+        opacity: 1;
+        pointer-events: unset;
+        left: initial;
+        position: relative;
     }
 }
 
@@ -79,13 +84,4 @@
 
 .reviews__author {
     font-weight: 700;
-}
-
-.reviews__switcher {
-    display: flex;
-    justify-content: center;
-
-    @include tablets {
-        margin-left: 5%;
-    }
 }

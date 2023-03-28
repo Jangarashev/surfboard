@@ -1,5 +1,5 @@
 .acco-container {
-    height: 100vh;
+    height: 100%;
     background: url(../img/acco-bg-active.jfif) center center no-repeat;
     background-size: cover;
     display: flex;
@@ -11,22 +11,17 @@
 }
 
 .acco__menu {
-    display: flex;
     position: absolute;
-    top: 0;
     right: 0;
-    bottom: 0;
-
-    @include phones {
-        width: 100%;
-        justify-content: flex-end;
-    }
+    display: flex;
 }
+
+
 
 .acco__item {
     display: flex;
 
-    &--active {
+    &.active {
 
         .acco-desc {
             opacity: 1;
@@ -35,6 +30,7 @@
 }
 
 .acco__button {
+    display: block;
     color: #fff;
     min-width: rem(100px);
     background: center center / cover no-repeat;

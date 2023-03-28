@@ -37,3 +37,4 @@ reviewsSwitcher.addEventListener("click", (e) => {
     findReview(id);
   }
 });
+

@@ -471,56 +471,54 @@
                     </ul>
                 </div>
             </section>
-            <section class="section acco-section">
-                    <h2 class="section__title acco__title">Меню</h2>
-                    <ul class="acco__menu" id="horizontalMenu">
-                        <li class="acco__item">
-                            <a href="#" class="acco__button" style="background-image: url(./img/acco-bg-1.jfif)">
-                                <span class="acco__button-text">
-                                    Лонгборды
-                                </span>
+
+            <section class="section products-menu-section">
+                    <h1 class="title products-menu-section__title">Меню</h1>
+                    <ul class="products-menu">
+                        <li class="products-menu__item"><a class="products-menu__title" href=""> <img
+                                    class="products-menu__image" src="./img/acco-bg-1.jfif"
+                                    alt="обложка для пункта меню" />
+                                <div class="products-menu__text">Лонгборды</div>
                             </a>
-                            <div class="acco__content">
-                                <p class="acco__desc">
-                                    Устойчивая доска для новичков. На них легко лежать, сидеть, грести, разгребаться на
+                            <div class="products-menu__content"><button class="products-menu__close"
+                                    type="button">+</button>
+                                <div class="products-menu__content-text">Устойчивая доска для новичков. На них легко лежать, сидеть, грести, разгребаться на
                                     волны и ехать. Размер и плавучесть доски позволяет брать очень маленькие и пологие
                                     волны и не спеша, не прилагая особых усилий ехать по ним.
-                                </p>
+                                </div>
                             </div>
                         </li>
-                        <li class="acco__item">
-                            <a href="#" class="acco__button" style="background-image: url(./img/acco-bg-2.jfif)">
-                                <span class="acco__button-text">
-                                    Шортборды
-                                </span>
+                        <li class="products-menu__item"><a class="products-menu__title" href=""> <img
+                                    class="products-menu__image" src="./img/acco-bg-2.jfif"
+                                    alt="обложка для пункта меню" />
+                                <div class="products-menu__text">Шортборды</div>
                             </a>
-                            <div class="acco__content">
-                                <p class="acco__desc">
-                                    Устойчивая доска для новичков. На них легко лежать, сидеть, грести, разгребаться на
+                            <div class="products-menu__content"><button class="products-menu__close"
+                                    type="button">+</button>
+                                <div class="products-menu__content-text">Устойчивая доска для новичков. На них легко лежать, сидеть, грести, разгребаться на
                                     волны и ехать. Размер и плавучесть доски позволяет брать очень маленькие и пологие
                                     волны и не спеша, не прилагая особых усилий ехать по ним.
-                                </p>
+                                </div>
                             </div>
                         </li>
-                        <li class="acco__item">
-                            <a href="#" class="acco__button" style="background-image: url(./img/acco-bg-3.jfif)">
-                                <span class="acco__button-text">
-                                    Софттопы
-                                </span>
+                        <li class="products-menu__item"><a class="products-menu__title" href=""> <img
+                                    class="products-menu__image" src="./img/acco-bg-3.jfif"
+                                    alt="обложка для пункта меню" />
+                                <div class="products-menu__text">Софттопы</div>
                             </a>
-                            <div class="acco__content">
-                                <p class="acco__desc">
-                                    Устойчивая доска для новичков. На них легко лежать, сидеть, грести, разгребаться на
+                            <div class="products-menu__content"><button class="products-menu__close"
+                                    type="button">+</button>
+                                <div class="products-menu__content-text">Устойчивая доска для новичков. На них легко лежать, сидеть, грести, разгребаться на
                                     волны и ехать. Размер и плавучесть доски позволяет брать очень маленькие и пологие
                                     волны и не спеша, не прилагая особых усилий ехать по ним.
-                                </p>
+                                </div>
                             </div>
                         </li>
                     </ul>
             </section>
             <section class="section reviews-section">
                 <div class="container">
-                    <h2 class="section__title">Отзывы</h2>
+                    <h1 class="title">Отзывы</h1>
                     <div class="reviews">
                         <div class="reviews__display">
                             <ul class="reviews__list" id="review">
@@ -589,7 +587,7 @@
                             </ul>
                         </div>
                         <ul class="reviews__switcher" id="reviewsSwitcher">
-                            <li class="reviews__switcher-item reviews__switcher-item--active">
+                            <li class="reviews__switcher-item active">
                                 <a href="#" class="reviews-switcher__link" data-open="one">
                                     <img src="./img/beauty.png" alt="black hair girl" class="interactive-avatar__img">
                                 </a>
@@ -852,17 +850,18 @@
     <script src="https://code.jquery.com/jquery-3.6.4.min.js" integrity="sha256-oP6HI9z1XaZNBrJURtCoUT5SUnxFr8s3BzRl+cbzUq8=" crossorigin="anonymous"></script>
     <!-- <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.umd.js"></script> -->
     <script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>
-    <script src="./js/shop-slider.js"></script>
+    <!-- <script src="./js/shop-slider.js"></script> 
     <script src="./js/hamburger.js"></script> 
-    <script src="./js/tabs.js"></script>
-    <script src="./js/horizontal-acco.js"></script>
+    <script src="./js/tabs.js"></script>-->
+    <script src="./js/menu-acco.js"></script>
+    <!-- <script src="./js/horizontal-acco.js"></script>
     <script src="./js/modal.js"></script>
-    <!-- <script src="./js/paginator.js"></script> -->
+     <script src="./js/paginator.js"></script> 
     <script src="./js/team.js"></script>
     <script src="https://www.youtube.com/iframe_api"></script>
     <script src="./js/player.js"></script>
     <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU"></script>
-    <script src="./js/map.js"></script>
+    <script src="./js/map.js"></script>-->
 
 
 </body>

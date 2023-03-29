@@ -1,5 +1,5 @@
 .menu {
-    margin-right: 50px;
+    margin-right: rem(50px);
 
     @include tablets {
         display: none;

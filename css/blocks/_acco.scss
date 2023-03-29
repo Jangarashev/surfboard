@@ -1,5 +1,5 @@
-.acco-container {
-    height: 100%;
+.acco-section {
+    height: 100vh;
     background: url(../img/acco-bg-active.jfif) center center no-repeat;
     background-size: cover;
     display: flex;
@@ -7,7 +7,6 @@
 
 .acco__title {
     color: #fff;
-    margin: 5% 5%;
 }
 
 .acco__menu {
@@ -55,7 +54,7 @@
     width: 0;
     overflow: hidden;
     transition: width 0.3s;
-    height: 100vh;
+    height: 100%;
     position: relative;
 }
 

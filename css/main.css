@@ -31,7 +31,7 @@ body {
   position: relative;
   width: 100%;
   min-width: 1080px;
-  min-height: 100%;
+  height: 100%;
   overflow-x: hidden;
 }
 
@@ -187,7 +187,7 @@ a {
 }
 
 .menu {
-  margin-right: 50px;
+  margin-right: 2.7777777778rem;
 }
 @media screen and (max-width: 768px) {
   .menu {
@@ -318,10 +318,10 @@ a {
 .burger {
   opacity: 0;
   position: fixed;
-  top: 20px;
+  top: 1.1111111111rem;
   right: 10%;
-  height: 25px;
-  width: 40px;
+  height: 1.3888888889rem;
+  width: 2.2222222222rem;
   cursor: pointer;
   z-index: 15;
   -webkit-transition: all 0.4s;
@@ -329,7 +329,7 @@ a {
 }
 .burger__line {
   width: 100%;
-  height: 2px;
+  height: 0.1111111111rem;
   position: absolute;
   background-color: #fff;
   top: 0;
@@ -374,7 +374,7 @@ a {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  margin-left: 50px;
+  margin-left: 2.7777777778rem;
 }
 
 .adventage__icon {
@@ -613,7 +613,7 @@ a {
   font-weight: 700;
   padding-top: 0.5555555556rem;
   color: #292929;
-  margin-bottom: 20px;
+  margin-bottom: 1.1111111111rem;
 }
 @media screen and (max-width: 480px) {
   .benefit__title {
@@ -674,8 +674,8 @@ a {
 }
 .product__col:before {
   background-image: url(../img/surfboard-background.svg);
-  width: 75px;
-  height: 92px;
+  width: 4.1666666667rem;
+  height: 5.1111111111rem;
 }
 @media screen and (max-width: 768px) {
   .product__col {
@@ -691,8 +691,8 @@ a {
 .product__options {
   width: 5rem;
   height: 5rem;
-  border-radius: 6px;
-  margin-top: 10px;
+  border-radius: 0.3333333333rem;
+  margin-top: 0.5555555556rem;
   background: url(../img/menu-item.svg) center bottom 65% no-repeat;
   background-color: #3A587E;
   text-align: center;
@@ -703,7 +703,7 @@ a {
   background-color: #3465A3;
 }
 .product__options:hover .dropdown__menu {
-  left: 90px;
+  left: 5rem;
   display: block;
   background: #d5d5d5;
   -webkit-transition: opacity 0.3s;
@@ -767,14 +767,14 @@ a {
 }
 
 .product__price {
-  font-size: 26px;
-  margin-left: 20px;
+  font-size: 1.4444444444rem;
+  margin-left: 1.1111111111rem;
   margin: 0;
 }
 
 .dropdown__link {
   font-weight: 700;
-  font-size: 14px;
+  font-size: 0.7777777778rem;
   color: #fff;
   text-transform: uppercase;
   text-decoration: none;
@@ -928,8 +928,8 @@ a {
   font-weight: 400;
 }
 
-.acco-container {
-  height: 100%;
+.acco-section {
+  height: 100vh;
   background: url(../img/acco-bg-active.jfif) center center no-repeat;
   background-size: cover;
   display: -webkit-box;
@@ -939,7 +939,6 @@ a {
 
 .acco__title {
   color: #fff;
-  margin: 5% 5%;
 }
 
 .acco__menu {
@@ -988,7 +987,7 @@ a {
   overflow: hidden;
   -webkit-transition: width 0.3s;
   transition: width 0.3s;
-  height: 100vh;
+  height: 100%;
   position: relative;
 }
 
@@ -1339,7 +1338,7 @@ a {
   bottom: 0;
   left: 0;
   right: 0;
-  height: 35px;
+  height: 1.9444444444rem;
   background: #3e3e3e;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1350,32 +1349,32 @@ a {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  padding: 0 25px;
+  padding: 0 1.3888888889rem;
 }
 
 .player__start {
   width: 0;
   height: 0;
-  border: 11px solid transparent;
+  border: 0.6111111111rem solid transparent;
   border-left-color: #626262;
   padding: 0;
   border-right-width: 0;
   background: transparent;
   position: absolute;
-  top: 5px;
-  left: 20px;
+  top: 0.2777777778rem;
+  left: 1.1111111111rem;
   outline: none;
 }
 .player__start.paused {
-  width: 14px;
-  height: 22px;
+  width: 0.7777777778rem;
+  height: 1.2222222222rem;
   border: none;
 }
 .player__start.paused:after, .player__start.paused:before {
   content: "";
   display: block;
   position: absolute;
-  width: 5px;
+  width: 0.2777777778rem;
   top: 0;
   bottom: 0;
   background: #626262;
@@ -1389,19 +1388,19 @@ a {
 
 .player__playback {
   position: absolute;
-  height: 4px;
-  width: 446px;
+  height: 0.2222222222rem;
+  width: 24.7777777778rem;
   background: #626262;
-  top: 15px;
-  left: 50px;
+  top: 0.8333333333rem;
+  left: 2.7777777778rem;
 }
 
 .player__playback-button {
   background: #626262;
-  border-radius: 50px;
+  border-radius: 2.7777777778rem;
   border: none;
-  width: 12px;
-  height: 12px;
+  width: 0.6666666667rem;
+  height: 0.6666666667rem;
   padding: 0;
   position: absolute;
   top: -4px;
@@ -1412,8 +1411,8 @@ a {
 
 .player__duration {
   position: absolute;
-  top: 7px;
-  right: 20px;
+  top: 0.3888888889rem;
+  right: 1.1111111111rem;
   color: #626262;
   font-weight: bold;
 }
@@ -1430,7 +1429,7 @@ a {
 .footer {
   position: absolute;
   background: #fff;
-  bottom: 0px;
+  bottom: 0rem;
   left: 0rem;
   max-height: 5.2222222222rem;
 }

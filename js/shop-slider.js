@@ -1,14 +1,14 @@
-const slider = $(".products__list").bxSlider({
+const slider = $(".products").bxSlider({
   contols: false,
   pager: false,
 });
 
-$(".arrows__direction--prev").click ((e) => {
+$(".products-slider__btn--prev").click ((e) => {
   e.preventDefault();
   slider.goToPrevSlide();
 });
 
-$(".arrows__direction--next").click ((e) => {
+$(".products-slider__btn--next").click ((e) => {
   e.preventDefault();
   slider.goToNextSlide();
 });

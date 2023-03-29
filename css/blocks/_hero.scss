@@ -1,58 +1,76 @@
 .hero__container {
+    flex: 1;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    height: 100%;
-    padding: rem(25px) 0 rem(60px);
-
-    @include tablets {
-        text-align: center;
-    }
+    position: relative;
+    z-index: 1;
 }
-
+  
 .hero__title-section {
-    width: 45%;
-    margin-left: 5%;
-    line-height: 0.9;
+    width: 46%;
 
     @include tablets {
-        width: 95%;
-        margin-left: 0;
-    }
-
-    @include tablets {
-        padding-bottom: 20%;
-    }
-
-    @include phones {
         width: 100%;
-        padding-bottom: 25%;
-    }
-
-}
-
-.hero__icons-section {
-    @include tablets {
-        display: none;
-    }
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        padding: 0 10%;
+      }
 }
 
 .hero__main-title {
-    font-size: rem(48px);
-    font-weight: 700;
-    line-height: 1.1;
-    margin-bottom: rem(15px);
+    font-size: 60px;
+    font-weight: bold;
+    line-height: 1;
     text-transform: uppercase;
-
-    @include phones {
-        font-size: rem(32px);
-        line-height: 1;
+    margin-bottom: 4px;
+}
+  
+.hero__subtitle {
+    font-size: 21px;
+    margin-bottom: 26px;
+  
+    @include tablets {
+      padding: 0 18%;
     }
 }
 
-.hero__title-desc {
-    font-size: rem(21px);
-    font-weight: 400;
-    margin: rem(40px) 0;
-    padding-bottom: rem(20px);
+.hero__icons {
+    display: flex;
+    align-items: flex-start;
+}
+  
+.hero__icons-section {
+    @include tablets {
+      display: flex;
+      justify-content: center;
+    }
+}
+
+.hero__icon-item {
+    display: flex;
+    margin-right: 33px;
+  
+    &:last-child {
+      margin-right: 0;
+    }
+}
+  
+.hero__icon-pic {
+    fill: #fff;
+    margin-right: 6px;
+}
+  
+.hero__icon-elem {
+    width: 50px;
+    height: 40px;
+    display: block;
+}
+  
+.hero__icon-text {
+    max-width: 85px;
+    line-height: 1.2;
+    font-size: 16px;
 }

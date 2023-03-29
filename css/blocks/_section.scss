@@ -1,21 +1,17 @@
 .section {
-    height: 100%;
-    min-height: rem(650px);
+    height: 100vh;
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    height: 100vh;
+    padding: rem(24px) 0;
+    min-height: 650px;
 
-    @include tablets {
-        height: 100%;
-    }
-
-    @include phones {
-        height: 100%;
-    }
+    &--centered {
+        justify-content: center;
+        flex: 1;
+      }
 }
 
-.hero-section {
+.hero {
     background: url(../img/welcome-page.jfif) center bottom no-repeat;
     background-size: cover;
     background-color: $blue;
@@ -29,11 +25,11 @@
     @include phones {
         background-size: cover;
         background-color: $blue;
-        background-position: top 91px center;
+        background-position: top rem(91px) center;
     }
 }
 
-.section__title {
+.title {
     font-size: rem(48px);
     font-weight: 700;
     margin-bottom: rem(60px);
@@ -46,6 +42,15 @@
         padding-top: 10%;
     }
 }
+
+.subtitle {
+    padding: 0 26%;
+    text-align: center;
+  
+    @include phones {
+      padding: 0 4%;
+    }
+  }
 
 
 

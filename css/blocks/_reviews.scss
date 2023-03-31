@@ -21,11 +21,7 @@
     left: rem(-9999px);
     transition: opacity .3s;
 
-    &:nth-child(1) {
-        position: relative;
-        opacity: 1;
-        left: initial;
-    }
+
 
     &.active {
         position: static;

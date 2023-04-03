@@ -30,18 +30,27 @@ body {
 .wrapper {
   position: relative;
   width: 100%;
-  min-width: 1080px;
   height: 100%;
   overflow-x: hidden;
 }
 
 .maincontent {
   height: 100%;
+  -webkit-transition: -webkit-transform 1s;
+  transition: -webkit-transform 1s;
+  transition: transform 1s;
+  transition: transform 1s, -webkit-transform 1s;
+  will-change: transform;
 }
 
 .container {
-  width: 1060px;
+  max-width: 1060px;
   margin: 0 auto;
+}
+@media screen and (max-width: 768px) {
+  .container {
+    height: 100%;
+  }
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -120,16 +129,23 @@ a {
         -ms-flex-align: center;
             align-items: center;
     text-align: center;
-    padding: 0 10%;
+    padding: 0 5%;
+    -webkit-transform: translateY(-70%);
+            transform: translateY(-70%);
   }
 }
 
 .hero__main-title {
-  font-size: 60px;
+  font-size: 3.3333333333rem;
   font-weight: bold;
   line-height: 1;
   text-transform: uppercase;
-  margin-bottom: 4px;
+  margin-bottom: 0.2222222222rem;
+}
+@media screen and (max-width: 768px) {
+  .hero__main-title {
+    font-size: 2.6666666667rem;
+  }
 }
 
 .hero__subtitle {
@@ -153,12 +169,7 @@ a {
 
 @media screen and (max-width: 768px) {
   .hero__icons-section {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
+    display: none;
   }
 }
 
@@ -212,6 +223,12 @@ a {
 @media screen and (max-width: 768px) {
   .header__btns {
     display: none;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .logo__img {
+    margin-left: 2.7777777778rem;
   }
 }
 
@@ -323,6 +340,7 @@ a {
 @media screen and (max-width: 768px) {
   .burger {
     opacity: 1;
+    margin-top: 0.5555555556rem;
   }
 }
 
@@ -369,7 +387,13 @@ a {
 .shop-button {
   width: 8.6666666667rem;
   height: 3.3333333333rem;
-  margin-right: 50px;
+  margin-right: 2.7777777778rem;
+}
+@media screen and (max-width: 768px) {
+  .shop-button {
+    margin-right: 0;
+    margin-left: 1.6666666667rem;
+  }
 }
 
 .section {
@@ -474,8 +498,13 @@ a {
   }
 }
 
-.why {
+.why-section {
   position: relative;
+}
+@media screen and (max-width: 768px) {
+  .why-section {
+    padding: 20% 0;
+  }
 }
 
 .why__title {
@@ -490,11 +519,8 @@ a {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: start;
-      -ms-flex-align: start;
-          align-items: flex-start;
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 480px) {
   .benefits {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -578,33 +604,9 @@ a {
   position: relative;
   display: inline-block;
 }
-@media screen and (max-width: 768px) {
-  .benefits__icon-wrapper {
-    width: 70px;
-    height: 70px;
-  }
-}
-@media screen and (max-width: 480px) {
-  .benefits__icon-wrapper {
-    width: 126px;
-    height: 126px;
-  }
-}
 
 .benefits__icon {
   margin-top: 24px;
-}
-@media screen and (max-width: 768px) {
-  .benefits__icon {
-    width: 44px;
-    height: 40px;
-  }
-}
-@media screen and (max-width: 480px) {
-  .benefits__icon {
-    width: 75px;
-    height: 70px;
-  }
 }
 
 .benefits__title {
@@ -617,6 +619,12 @@ a {
 @media screen and (max-width: 480px) {
   .benefits__content {
     text-align: left;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .benefit__desc {
+    padding: 0 5%;
   }
 }
 
@@ -749,6 +757,22 @@ a {
 
 .products__values-rub-sign {
   font-size: 2.1111111111rem;
+}
+
+.products-menu-section {
+  background: imgPath("../img/menu-item.svg") center center/cover no-repeat;
+  position: relative;
+  color: #fff;
+}
+.products-menu-section:before {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.2);
 }
 
 .products-slider {
@@ -1281,7 +1305,7 @@ a {
 }
 @media screen and (max-width: 768px) {
   .order-section {
-    padding: 20% 0;
+    padding: 10% 0;
   }
 }
 
@@ -1443,6 +1467,12 @@ a {
   position: relative;
   margin: 0 auto;
 }
+@media screen and (max-width: 768px) {
+  .player-section__container {
+    width: 564px;
+    height: 364px;
+  }
+}
 
 .player {
   position: relative;
@@ -1595,7 +1625,6 @@ a {
 .Sound__level {
   height: 4px;
   width: 60px;
-  color: #FEDB3F;
 }
 
 .volume__duration {

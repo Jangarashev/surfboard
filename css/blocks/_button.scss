@@ -30,6 +30,11 @@
 .shop-button {
     width: rem(156px);
     height: rem(60px);
-    margin-right: 50px;
+    margin-right: rem(50px);
+
+    @include tablets {
+        margin-right: 0;
+        margin-left: rem(30px);
+    }
 }
 

@@ -7,6 +7,11 @@
   height: rem(405px); 
   position: relative;
   margin: 0 auto;
+
+  @include tablets {
+    width: 564px;
+    height: 364px;
+  }
 }
 
 .player {
@@ -149,7 +154,7 @@
 .Sound__level {
   height: 4px;
   width: 60px;
-  color: $yellow;
+
 }
 
 .volume__duration {

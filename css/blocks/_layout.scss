@@ -26,14 +26,23 @@ body {
 .wrapper {
     position: relative; // может быть не нужен //
     width: 100%;
-    min-width: $containerWidth + 20px;
     height: 100%;
     overflow-x: hidden;
 }
 
+.maincontent {
+    height: 100%;
+    transition: transform 1s;
+    will-change: transform;
+}
+
 .container {
-    width: $containerWidth;
+    max-width: $containerWidth;
     margin: 0 auto;
+
+    @include tablets {
+        height: 100%;
+    }
 }
 
 // tag styles reset

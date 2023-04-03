@@ -12,3 +12,10 @@
       display: none;
     }
   }
+
+.logo__img {
+  
+  @include tablets {
+    margin-left: rem(50px);
+  }
+}

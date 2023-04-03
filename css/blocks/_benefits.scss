@@ -1,5 +1,9 @@
-.why {
+.why-section {
     position: relative;
+
+    @include tablets {
+        padding: 20% 0;
+    }
 }
 
 .why__title {
@@ -10,11 +14,11 @@
     margin-bottom: 0;
   }
 
+
 .benefits {
     display: flex;
-    align-items: flex-start;
   
-    @include tablets {
+    @include phones {
       flex-direction: column;
       align-items: center;
     }
@@ -89,30 +93,10 @@
     border-radius: 50%;
     position: relative;
     display: inline-block;
-  
-    @include tablets {
-      width: 70px;
-      height: 70px;
-    }
-  
-    @include phones {
-      width: 126px;
-      height: 126px;
-    }
 }
   
 .benefits__icon {
     margin-top: 24px;
-  
-    @include tablets {
-      width: 44px;
-      height: 40px;
-    }
-  
-    @include phones {
-      width: 75px;
-      height: 70px;
-    }
 }
   
   .benefits__title {
@@ -125,6 +109,13 @@
 .benefits__content {
     @include phones {
       text-align: left;
+    }
+}
+
+.benefit__desc {
+
+    @include tablets {
+        padding: 0 5%;
     }
 }
   

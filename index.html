@@ -6,17 +6,19 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Surfboard</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.css"
+    />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.css">
     <link rel="stylesheet" href="./css/main.css">
-    <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.css" /> -->
-    
 </head>
 
 <body>
     <div class="wrapper">
         <div class="maincontent">
 
-            <section class="section hero">
+            <section class="section hero is-active">
                 <div class="container hero__container">
                     <header class="header">
                         <img src="./img/logo.png" alt="surfboard-logo" class="logo__img">
@@ -596,29 +598,35 @@
                     </div>
                 </div>
             </section>
-            <section class="section video-section">
-                <div class="container video__container">
-                    <h1 class="section__title">Как мы работаем</h1>
-                    <div class="video__player">
-                        <video id="video" poster="./img/player-splash.png">
-                            <source src="./video.mp4" type="video/mp4">
-                        </video>
-                        <img src="./img/play-button.png" alt="play-button" class="play video__play">
-                    </div>
-                    <div class="video__toolbar">
-                        <div class="duration">
-                            <img src="./img/play-button.png" alt="" class="duration__icon play">
-                            <input type="range" class="duration__length" id="durationLevel" min="0">
+            <section data-sidemenu-theme="black" data-section-id="player" class="section player-section">
+                <div class="container">
+                  <h2 class="title">Как мы работаем</h2>
+                  <div class="player-section__container">
+                    <div class="player">
+                      <div class="player__wrapper">
+                        <div id="yt-player" class="player__elem"></div>
+                        <div class="player__splash"></div>
+                      </div>
+                      <div class="player__controls">
+                        <button class="player__start"></button>
+                        <div class="player__playback">
+                          <button class="player__playback-button"></button>
+                        </div>
+                        <div class="player__duration">
+                          <span class="player__duration-completed">0:00</span> :
+                          <span class="player__duration-estimate">0:00</span>
                         </div>
                         <div class="sound">
-                            <img src="" alt="">
-                            <div class="sound__volume">
-                                <input type="range" class="duration__length duration__length--other" id="volumeLevel" min="0" max="10">
+                            <img src="./img/sound-icon.png" alt="sound-icon" id="micLevel" class="sound-off">
+                            <div class="volume__duration">
+                                <input type="range" id="volumeLevel" min="0" max="100" class="Sound__level"> </input>
                             </div>
                         </div>
+                      </div>
                     </div>
+                  </div>
                 </div>
-            </section>
+              </section>
             <section class="section order-section">
                 <div class="container">
                     <h2 class="section__title order__title">
@@ -771,7 +779,7 @@
                 <a href="" class="fixed-menu__link" data-scroll-to="reviews-section"></a>
             </li>
             <li class="fixed-menu__item">
-                <a href="" class="fixed-menu__link" data-scroll-to="player-section"></a>
+                <a href="" class="fixed-menu__link" data-scroll-to="video-section"></a>
             </li>
             <li class="fixed-menu__item">
                 <a href="" class="fixed-menu__link" data-scroll-to="order-section"></a>
@@ -832,14 +840,14 @@
                 Сообщение отправлено
             </div>
             <div class="modal__button-container">
-                <a href="#" class="btn app-close-modal"></a>
+                <a href="#" class="button modal-button">Закрыть</a>
             </div>
         </div>
     </div>
 
     <script src="https://code.jquery.com/jquery-3.6.4.min.js"
         integrity="sha256-oP6HI9z1XaZNBrJURtCoUT5SUnxFr8s3BzRl+cbzUq8=" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.umd.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.umd.js"></script>
     <script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>
     <script src="./js/shop-slider.js"></script>
     <script src="./js/hamburger.js"></script>

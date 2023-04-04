@@ -2,6 +2,7 @@
     background: url(../img/form-background.jfif) center bottom no-repeat;
     background-size: cover;
     height: 100%;
+    justify-content: center;
 
     @include tablets {
     padding: 10% 0;

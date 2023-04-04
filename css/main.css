@@ -500,6 +500,9 @@ a {
 
 .why-section {
   position: relative;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 @media screen and (max-width: 768px) {
   .why-section {

@@ -14,6 +14,10 @@
     .fancybox-button {
       display: none;
     }
+
+    &--active {
+      display: block;
+    }
   }
   
   .modal__container {
@@ -25,7 +29,7 @@
   }
   
   .input-error {
-    border-color: hotpink;
+    border-color: red;
   }
   
   .modal__content {

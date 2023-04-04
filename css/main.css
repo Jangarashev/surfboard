@@ -1702,6 +1702,9 @@ svg {
 .modal .fancybox-button {
   display: none;
 }
+.modal--active {
+  display: block;
+}
 
 .modal__container {
   background: #fff;
@@ -1719,7 +1722,7 @@ svg {
 }
 
 .input-error {
-  border-color: hotpink;
+  border-color: red;
 }
 
 .modal__content {

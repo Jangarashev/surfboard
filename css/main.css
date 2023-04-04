@@ -1305,6 +1305,9 @@ a {
   background: url(../img/form-background.jfif) center bottom no-repeat;
   background-size: cover;
   height: 100%;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 @media screen and (max-width: 768px) {
   .order-section {
@@ -1465,7 +1468,7 @@ a {
 }
 
 .player-section__container {
-  max-width: 36.6666666667rem;
+  width: 36.6666666667rem;
   height: 22.5rem;
   position: relative;
   margin: 0 auto;

@@ -7,9 +7,9 @@ const validateFields = (form, fieldsArray) => {
     }
   });
 
-  const errorFileds = form.find("input-error");
+  const errorFields = form.find(".input-error");
 
-  return errorFileds.length === 0;
+  return errorFields.length === 0;
 }
 
 $('.form').submit(e => {
@@ -36,7 +36,7 @@ $('.form').submit(e => {
     // }
   // });
 
-  const errorFileds = form.find("input-error");
+  const errorFields = form.find("input-error");
 
   if (isValid) {
     $.ajax({
@@ -57,8 +57,8 @@ $('.form').submit(e => {
           });
       },
 
-      error: data => {
-        const message = data.responseJSON.message;
+      error: () => {
+        const message = "Ошибка сервера";
         content.text(message);
         modal.addClass("error-modal");
 
